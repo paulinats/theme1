@@ -2072,7 +2072,7 @@
         "auto_rotate": {
           "label": "Auto-rotate slides"
         },
-        "change_slides_counter": {
+        "change_slides_speed": {
           "label": "Change slides every"
         },
         "mobile": {
