@@ -579,7 +579,6 @@ class SlideshowComponent extends SliderComponent {
     this.sliderControlLinks = this.sliderControlWrapper.querySelectorAll('.slider-counter__link');
     this.sliderControlLinksArray = Array.from(this.sliderControlLinks);
     this.sliderAutoplay = this.slider.hasAttribute('data-autoplay');
-    this.sliderAutoplayButton = this.sliderControlWrapper.querySelector('.slideshow__autoplay');
     this.mediaQueryMobile = window.matchMedia('(max-width: 749px)');
     this.isPlaying = false;
     this.autoPlayEnabled = false;
@@ -589,6 +588,8 @@ class SlideshowComponent extends SliderComponent {
     this.sliderControlLinks.forEach(link => link.addEventListener('click', this.linkToSlide.bind(this)));
 
     if (!this.sliderAutoplay) return;
+    this.sliderAutoplayButton = this.sliderControlWrapper.querySelector('.slideshow__autoplay');
+
     this.sliderAutoplayButton.addEventListener('click', this.autoPlayToggle.bind(this));
     this.slider.addEventListener('mouseenter', this.autoplayFocusHandling.bind(this));
     this.slider.addEventListener('mouseleave', this.autoplayFocusHandling.bind(this));
@@ -654,8 +655,10 @@ class SlideshowComponent extends SliderComponent {
   }
 
   autoRotateSlides() {
-    const nextPageToShow = this.currentPage === this.sliderItemsToShow.length ? this.sliderItemsToShow[0] : this.sliderItemsToShow[this.currentPage];
-    nextPageToShow.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    const slideScrollPosition = this.currentPage === this.sliderItems.length ? 0 : this.slider.scrollLeft + this.sliderLastItem.clientWidth;
+    this.slider.scrollTo({
+      left: slideScrollPosition
+    });
   }
 
   linkToSlide(event) {
