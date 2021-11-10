@@ -1,5 +1,5 @@
 .footer {
-  border-top: var(--dividers-width) solid rgba(var(--dividers-color), var(--dividers-opacity));
+  border-top: var(--dividers-width) solid rgba(var(--color-foreground), var(--dividers-opacity));
 }
 
 .footer:not(.color-background-1) {

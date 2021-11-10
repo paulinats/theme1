@@ -194,90 +194,6 @@
         "unit": "px",
         "label": "Blur radius",
         "default": 0
-      },
-      {
-        "type": "header",
-        "content": "Primary button colors"
-      },
-      {
-        "type": "color",
-        "id": "buttons_text_color",
-        "label": "Text color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "buttons_background_color",
-        "label": "Background color",
-        "default": "#555555"
-      },
-      {
-        "type": "color",
-        "id": "buttons_border_color",
-        "label": "Border color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "buttons_shadow_color",
-        "label": "Shadow color",
-        "default": "#000000"
-      },
-      {
-        "type": "header",
-        "content": "Secondary button colors"
-      },
-      {
-        "type": "color",
-        "id": "secondary_buttons_text_color",
-        "label": "Text color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "secondary_buttons_background_color",
-        "label": "Background color",
-        "default": "#555555"
-      },
-      {
-        "type": "color",
-        "id": "secondary_buttons_border_color",
-        "label": "Border color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "secondary_buttons_shadow_color",
-        "label": "Shadow color",
-        "default": "#000000"
-      },
-      {
-        "type": "header",
-        "content": "Tertiary button colors"
-      },
-      {
-        "type": "color",
-        "id": "tertiary_buttons_text_color",
-        "label": "Text color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "tertiary_buttons_background_color",
-        "label": "Background color",
-        "default": "#555555"
-      },
-      {
-        "type": "color",
-        "id": "tertiary_buttons_border_color",
-        "label": "Border color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "tertiary_buttons_shadow_color",
-        "label": "Shadow color",
-        "default": "#000000"
       }
     ]
   },
@@ -389,34 +305,31 @@
         "unit": "px",
         "label": "Blur radius",
         "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Dividers & lines",
+    "settings": [
+      {
+        "type": "range",
+        "id": "dividers_width",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "label": "Width",
+        "default": 1
       },
       {
-        "type": "header",
-        "content": "Colors"
-      },
-      {
-        "type": "color",
-        "id": "inputs_text_color",
-        "label": "Text color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "inputs_background_color",
-        "label": "Background color",
-        "default": "#555555"
-      },
-      {
-        "type": "color",
-        "id": "inputs_border_color",
-        "label": "Border color",
-        "default": "#000000"
-      },
-      {
-        "type": "color",
-        "id": "inputs_shadow_color",
-        "label": "Shadow color",
-        "default": "#000000"
+        "type": "range",
+        "id": "dividers_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Opacity",
+        "default": 50
       }
     ]
   },
@@ -464,41 +377,6 @@
         "unit": "%",
         "label": "t:settings_schema.typography.settings.body_scale.label",
         "default": 100
-      }
-    ]
-  },
-  {
-    "name": "Dividers & lines",
-    "settings": [
-      {
-        "type": "range",
-        "id": "dividers_width",
-        "min": 0,
-        "max": 20,
-        "step": 1,
-        "unit": "px",
-        "label": "Width",
-        "default": 1
-      },
-      {
-        "type": "range",
-        "id": "dividers_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "label": "Opacity",
-        "default": 50
-      },
-      {
-        "type": "header",
-        "content": "Colors"
-      },
-      {
-        "type": "color",
-        "id": "dividers_color",
-        "label": "Color",
-        "default": "#000000"
       }
     ]
   },

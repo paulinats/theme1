@@ -22,8 +22,8 @@
 .accordion {
   margin-top: 2.5rem;
   margin-bottom: 0;
-  border-top: var(--dividers-width) solid rgba(var(--dividers-color), var(--dividers-opacity));
-  border-bottom: var(--dividers-width) solid rgba(var(--dividers-color), var(--dividers-opacity));
+  border-top: var(--dividers-width) solid rgba(var(--color-foreground), var(--dividers-opacity));
+  border-bottom: var(--dividers-width) solid rgba(var(--color-foreground), var(--dividers-opacity));
 }
 
 .accordion__title {
