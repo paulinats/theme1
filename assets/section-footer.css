@@ -1,5 +1,6 @@
 .footer {
   border-top: var(--dividers-width) solid rgba(var(--color-foreground), var(--dividers-opacity));
+  box-shadow: 0 0 var(--dividers-shadow-blur-radius) rgba(var(--color-foreground), var(--dividers-shadow-opacity));
 }
 
 .footer:not(.color-background-1) {
@@ -49,6 +50,7 @@
 
 .footer__content-bottom {
   border-top: solid var(--dividers-width) rgba(var(--color-foreground), var(--dividers-opacity));
+  box-shadow: 0 0 var(--dividers-shadow-blur-radius) rgba(var(--color-foreground), var(--dividers-shadow-opacity));
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
