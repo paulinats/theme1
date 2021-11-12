@@ -680,7 +680,7 @@ class SlideshowComponent extends SliderComponent {
 
   linkToSlide(event) {
     event.preventDefault();
-    const slideScrollPosition = this.slider.scrollLeft + this.sliderLastItem.clientWidth * (this.sliderControlLinksArray.indexOf(event.target) + 1 - this.currentPage);
+    const slideScrollPosition = this.slider.scrollLeft + this.sliderLastItem.clientWidth * (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
     this.slider.scrollTo({
       left: slideScrollPosition
     });
